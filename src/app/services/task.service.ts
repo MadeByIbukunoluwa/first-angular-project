@@ -19,7 +19,8 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:5000/tasks'
+  private apiUrl = 'https://my-json-server.typicode.com/MadeByIbukunoluwa/tasks-api-server/tasks'
+  // private apiUrl = 'http://localhost:5000/tasks'
   constructor(private http:HttpClient) { }
   getTasks(): Observable<Task[]> {
     //  const tasks = of(TASKS)
@@ -38,3 +39,11 @@ export class TaskService {
       return this.http.post<Task>(this.apiUrl,task,httpOptions)
   }
 }
+
+// https://mockend.com/MadeByibukunoluwa2/angular-project-backend/users needs to be in only the structure they specified 
+
+
+// https://my-json-server.typicode.com/MadeByIbukunoluwa/tasks-api-server
+
+
+

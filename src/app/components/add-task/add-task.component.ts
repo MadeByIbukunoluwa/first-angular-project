@@ -11,7 +11,8 @@ export class AddTaskComponent implements OnInit {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter()
       text!:string;
       day!:string;
-      reminder: boolean = false 
+      reminder: boolean = false ;
+      // id!:number;
       showAddTask: boolean = false;
       subscription: Subscription 
     constructor(private uiService : UiService) {
@@ -34,5 +35,6 @@ export class AddTaskComponent implements OnInit {
         this.text = ' '
         this.day = ' '
         this.reminder = false 
+        // this.id = Math.random() * 1232467439
     }
 }
